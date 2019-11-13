@@ -1,0 +1,10 @@
+#head{
+    background-color: black;
+    display: flex;
+}
+h1{
+    font-family: bebas neue, elvetica;
+    color: white;
+    font-size: 70px;
+
+}

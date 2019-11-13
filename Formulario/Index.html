@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Complete el formulario</h1>
+    <form action="action.php"></form>
+        <div>
+            <input type="text" name="nombre" placeholder="Nombre">
+        </div>
+        <div>
+            <input type="text" name="apellido" placeholder="Apellido">
+        </div>
+        <div>
+            <input type="email" name="mail" placeholder="Email">
+        </div>
+        <div>
+            <select name="País" id="pais">
+                <option value="" disabled selected>Selecciona un país</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Bolivia">Bolivia</option>
+            </select>
+        </div>
+        <div>
+            <label for="Genero">Seleccione uno o más genero/s literario/s</label>
+            <br />
+            <input type="checkbox" name="novela" value="novela">Novela <br />
+            <input type="checkbox" name="ficcion" value="ficcion">Ficción <br />
+            <input type="checkbox" name="fabula" value="fabula">Fábula <br />
+            <input type="checkbox" name="cuento" value="cuento">Cuento <br />
+        </div>
+        <div>
+            <label for="Boletin">¿Desea recibir un boletín informativo?</label>
+            <br />
+            <input type="radio" name="Boletin" value="Si" />Si <br />
+            <input type="radio" name="Boletin" value="No" />No <br />
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+</body>
+</html>
