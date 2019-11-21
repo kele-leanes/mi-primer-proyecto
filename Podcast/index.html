@@ -6,15 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Podcast Channel</title>
     <link rel="stylesheet" href="Styles.css">
-    <style>
-            @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap');
-            @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/deeca150a5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="logo"><img src="./assets/logo.svg" alt="Logo"></div>
+        <div class="logo"><a href="index.html"><img src="./assets/logo.svg" alt="Logo"></a></div>
         <div class="options">
             <ul>
             <li><a href="#episodes"> Episodios</a></li>
@@ -46,7 +43,7 @@
             <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. <br><br> Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
         </div>
     </div>
-    <div id="guest">
+    <div class="section">
         <h3>Invitadas/os estelares</h3>
         <div id="gallery">
             <img src="./assets/grace-hopper.png" alt="Grace Hopper.">
@@ -57,13 +54,13 @@
             <img src="./assets/susan-kare.png" alt="Susan Kare.">
         </div>
     </div>
-    <div id="themes">
+    <div class="section">
         <h3>Algunos de nuestros temas</h3>
         <div id="themesContainer">
-            <div><img src="./assets/icon1.svg" alt="">Trabajo remoto</div>
-            <div><img src="./assets/icon2.svg" alt="">Repensando la programación</div>
-            <div><img src="./assets/icon3.svg" alt="">Bases del código</div>
-            <div><img src="./assets/icon4.svg" alt="">Seguridad informática</div>
+            <div><img src="./assets/icon1.svg" alt=""><h5>Trabajo remoto</h5></div>
+            <div><img src="./assets/icon2.svg" alt=""><h5>Repensando la programación</h5></div>
+            <div><img src="./assets/icon3.svg" alt=""><h5>Bases del código</h5></div>
+            <div><img src="./assets/icon4.svg" alt=""><h5>Seguridad informática</h5></div>
         </div>
     </div>
     <div id="background2">
@@ -73,11 +70,11 @@
     <footer>
         <div>©2019- Hello blue pale dot</div>
         <div>
-            <i class="fab fa-spotify"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook"></i>
-            <i class="fab fa-telegram"></i>
+            <a href="http://spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
+            <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="http://telegram.com" target="_blank"><i class="fab fa-telegram"></i></a>
         </div>    
     </footer>    
 </body>
