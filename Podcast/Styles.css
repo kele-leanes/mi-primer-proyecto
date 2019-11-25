@@ -84,6 +84,9 @@ h1::after {
 h1 span {
     text-decoration: line-through;
 }
+.mobile {
+    display: none;
+}
 h4 {
     display: inline-block;
     height: 48px;
@@ -223,10 +226,10 @@ h3 {
     color: #060A24;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 600;
-    margin-bottom: 2.13rem;
+    margin-bottom: 34px;
 }
 #background2{
-    height: 31.38rem;
+    height: 518px;
     width: 100%;
     background-image: linear-gradient(225deg, #0000FF , #0000A3);
     clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
@@ -244,17 +247,15 @@ h3 {
     font-size: 3rem;
     font-weight: 300;
     margin: 0px;
-    padding-bottom: 2.25rem;
+    padding-bottom: 36px;
 }
 #background2 button {
-    width: 21.56rem;
-    border: none;
+    width: 345px;
 }
 footer {
-    margin: 0 6.25rem 0 6.25rem;
-    height: 5.94rem;
+    margin: 0 100px 0 100px;
+    height: 95px;
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 1rem;
     color: #060A24;
     display: flex;
     flex-direction: row;
@@ -264,6 +265,156 @@ footer {
 }
 footer i {
     color: #060A24;
-    size: 1.5rem;
-    margin-left: 2.25rem;
+    size: 18px;
+    margin-left: 36px;
+}
+@media only screen and (max-width: 320px) {
+    header {
+        width: 320px;
+        height: 44px;
+        padding: 10px 16px;
+        margin: 0;
+    }
+    .logo{
+        height: 24px;
+        width: 24px;
+    }
+    .logo img {
+        height: 24px;
+        width: 24px;
+    }
+    .options {
+        display: none;
+        margin: 0px;
+        height: 224px;
+        position: absolute;
+        top: 44px;
+        left: 0px;
+        padding-top: 16px;
+        padding-right: 100%;
+        background-color: #0000EC;
+    }
+    label {
+        font-size: 18px;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+    #menu {
+        display: none;
+    }
+    #menu:checked + .options {
+        display: inline-block;
+        flex-direction: column; 
+    }
+    ul {
+        flex-direction: column;
+    }
+    li {
+        margin: 0 16px 24px;
+        align-content: center;
+    }
+    li a {
+        color: #ffffff;
+    }
+    .title {
+        margin: 0 16px;
+    }
+    h1 {
+        font-size: 36px;
+        padding: 29px 50px 16px 0px;
+        letter-spacing: 0;
+        line-height: 42px;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inline;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 22px;
+    }
+    .more {
+        font-size: 16px !important;
+        width: 288px !important;
+        height: 48px !important;
+        margin: 0 0 24px;
+    }
+    .background {
+        height: 1203.5px;
+        width: 320px;
+        clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
+        
+    }
+    #episodes {
+        margin: 64px 0 10px 16px;
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: 42px;
+    }
+    iframe {
+        width: 298px;
+        height: 225px;
+        margin-top: 11px;
+        justify-items: center;
+    }
+    #phoneContainer {
+        width: 288px;
+        display: flex;
+        flex-direction: column;
+        margin: -95.5px 16px 0;
+    }
+    #phoneContainer img {
+        margin: 0 -20px;
+        width: 360px;
+        height: 519px;
+    }
+    #phoneContainer p {
+        margin: 0;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 22px;
+        height: 254px;
+    }    
+    #side h3 {
+        margin: 27px 0 8px;
+        height: 84px;
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: 42px;
+    }
+    #gallery img {
+        display: block;
+        width: 320px;
+        height: auto;
+    }
+    .section h3 {
+        margin: 48px 16px 37px;
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: 42px;
+    }    
+    #themesContainer {
+        margin: 0;
+    }
+    #background2 {
+        height: 341px;
+        clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+        justify-content: start;
+    }
+    .question {
+        font-size: 36px;
+        margin: 64px 16px 0;
+    }
+    footer {
+        height: 121px;
+        margin: 0px 26px;
+        size: 14px;
+        justify-content: center;
+        align-items: center;
+    }
+    footer i {
+        margin: 0 15px;
+
+    }
+
 }
