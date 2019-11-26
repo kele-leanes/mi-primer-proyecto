@@ -12,12 +12,15 @@
 <body>
     <header>
         <div class="logo"><a href="index.html"><img src="./assets/logo.svg" alt="Logo"></a></div>
-        <label for="menu">&#9776;</label>
         <input type="checkbox" id="menu">
+        <label for="menu">
+            <div class="hamburguer">&#9776;</div>
+            <div class="closeIcon">X</div>
+        </label>
         <div class="options">
             <ul>
             <li><a href="#episodes"> Episodios</a></li>
-            <li><a href="#us"> Nosotros</a></li>
+            <li><a href="#phone"> Nosotros</a></li>
             <li><a href="#interviews"> Entrevistas</a></li>
             <li><a href="#topics"> Tópicos</a></li>
         </ul></div>
@@ -47,7 +50,7 @@
         </div>
     </div>
     <div class="section">
-        <h3>Invitadas/os estelares</h3>
+        <h3 id="interviews">Invitadas/os estelares</h3>
         <div id="gallery">
             <img src="./assets/grace-hopper.png" alt="Grace Hopper.">
             <img src="./assets/Katie-Bouman.png" alt="Katie Bouman.">
@@ -58,7 +61,7 @@
         </div>
     </div>
     <div class="section">
-        <h3>Algunos de nuestros temas</h3>
+        <h3 id="topics">Algunos de nuestros temas</h3>
         <div id="themesContainer">
             <div><img src="./assets/icon1.svg" alt=""><h5>Trabajo remoto</h5></div>
             <div><img src="./assets/icon2.svg" alt=""><h5>Repensando la programación</h5></div>
@@ -68,7 +71,7 @@
     </div>
     <div id="background2">
         <div><h3 class="question">¿Querés las últimas novedades?</h3></div>
-        <button class="more">escuchá los episodios</button></a>
+        <button class="more">escuchá los episodios</button>
     </div>
     <footer>
         <div>©2019- Hello blue pale dot</div>

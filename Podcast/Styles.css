@@ -21,6 +21,12 @@ header {
     align-items: center;
     background-color: #ffffff;
 }
+#menu {
+    display: none;
+}
+label {
+    display: none;
+}
 .options {
     display: flex;
 }
@@ -160,6 +166,7 @@ iframe {
     z-index: 2;
 }
 #phone img {
+    overflow: hidden;
     height: 660px;
     width: 457.6px;
 }
@@ -287,6 +294,7 @@ footer i {
         display: none;
         margin: 0px;
         height: 224px;
+        width: 320px;
         position: absolute;
         top: 44px;
         left: 0px;
@@ -295,15 +303,26 @@ footer i {
         background-color: #0000EC;
     }
     label {
+        display: block;
         font-size: 18px;
         font-family: 'IBM Plex Mono', monospace;
+    }
+    .closeIcon {
+        display: none;
     }
     #menu {
         display: none;
     }
-    #menu:checked + .options {
+    #menu:checked .hamburguer {
+        display: none;
+    }
+    #menu:checked ~ .options,
+    #menu:checked ~ label .closeIcon {
         display: inline-block;
         flex-direction: column; 
+    }
+    #menu:checked ~ label .hamburguer {
+        display: none;
     }
     ul {
         flex-direction: column;
@@ -332,6 +351,12 @@ footer i {
         font-size: 14px;
         letter-spacing: 0;
         line-height: 22px;
+    }
+    h4 {
+        width: 288px;
+        height: 66px;
+        padding: 0;
+        margin-bottom: 36px;
     }
     .more {
         font-size: 16px !important;
@@ -363,13 +388,17 @@ footer i {
         flex-direction: column;
         margin: -95.5px 16px 0;
     }
+    #phone {
+        height: 519px;
+    }
     #phoneContainer img {
-        margin: 0 -20px;
+        overflow: hidden;
         width: 360px;
         height: 519px;
     }
     #phoneContainer p {
         margin: 0;
+        height: 254px;
         font-size: 14px;
         letter-spacing: 0;
         line-height: 22px;
