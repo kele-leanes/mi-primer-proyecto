@@ -12,17 +12,23 @@
 <body>
     <header>
         <div class="logo"><a href="index.html"><img src="./assets/logo.svg" alt="Logo"></a></div>
+        <input type="checkbox" id="menu">
+        <label for="menu">
+            <div class="hamburguer">&#9776;</div>
+            <div class="closeIcon">X</div>
+        </label>
         <div class="options">
             <ul>
             <li><a href="#episodes"> Episodios</a></li>
-            <li><a href="#us"> Nosotros</a></li>
+            <li><a href="#phone"> Nosotros</a></li>
             <li><a href="#interviews"> Entrevistas</a></li>
             <li><a href="#topics"> Tópicos</a></li>
         </ul></div>
     </header>
     <div class="title">
         <h1>Hello <span>world</span> pale blue dot</h1>
-        <h4>El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</h4>
+        <h4 class="desktop">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</h4>
+        <h4 class="mobile">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</h4>
         <button class="more">conocé más</button>
     </div>
     <div class="background">
@@ -44,7 +50,7 @@
         </div>
     </div>
     <div class="section">
-        <h3>Invitadas/os estelares</h3>
+        <h3 id="interviews">Invitadas/os estelares</h3>
         <div id="gallery">
             <img src="./assets/grace-hopper.png" alt="Grace Hopper.">
             <img src="./assets/Katie-Bouman.png" alt="Katie Bouman.">
@@ -55,7 +61,7 @@
         </div>
     </div>
     <div class="section">
-        <h3>Algunos de nuestros temas</h3>
+        <h3 id="topics">Algunos de nuestros temas</h3>
         <div id="themesContainer">
             <div><img src="./assets/icon1.svg" alt=""><h5>Trabajo remoto</h5></div>
             <div><img src="./assets/icon2.svg" alt=""><h5>Repensando la programación</h5></div>
@@ -69,7 +75,7 @@
     </div>
     <footer>
         <div>©2019- Hello blue pale dot</div>
-        <div>
+        <div class="icons">
             <a href="http://spotify.com" target="_blank"><i class="fab fa-spotify"></i></a>
             <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
