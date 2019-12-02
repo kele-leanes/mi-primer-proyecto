@@ -32,12 +32,11 @@ header {
 .options {
     display: none;
     height: 224px;
-    width: 320px;
+    width: 100%;
     position: absolute;
     top: 44px;
     left: 0px;
     padding-top: 16px;
-    padding-right: 100%;
     padding-left: 16px;
     background-color: #0000EC;
 }
@@ -107,6 +106,7 @@ li a {
     flex-direction: column;
     align-items: center;
 }
+
 h1 {
     font-family: 'IBM Plex Sans', sans-serif;
     color: #060A24;
@@ -170,14 +170,27 @@ p {
 }
 
 .background {
+    position: relative;
     min-height: 940px;
     width: 100%;
     background-image: linear-gradient(225deg, #0000FF , #0000A3);
-    clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
-    -webkit-clip-path: polygon(0 3%, 100% 0%, 100% 97%, 0% 100%);
     display: flex;
     z-index: 0;
-    padding: 64px 11px 0px;
+    padding-top: 64px;
+}
+
+.background .polygonTop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10vw;
+}
+
+.background .polygonBottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10vw;
 }
 
 #episodes {
@@ -192,6 +205,7 @@ p {
 .pluginContainer {
     display: flex;
     flex-direction: column;
+    padding: 0 11px;
 }
 
 .plugin {
@@ -208,7 +222,7 @@ iframe {
     justify-items: center;
 }
 
-#phoneContainer {
+.phoneContainer {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -217,17 +231,20 @@ iframe {
     margin-top: -95.5px;
 }
 
-#phone {
+.phone {
+    width: 320px;
     line-height: 0;
     margin: 0 -52px;
     z-index: 2;
+    overflow: hidden;
 }    
 
-#phoneContainer img {
+.phoneContainer img {
+    margin-left: -20px;
     width: 360px;
     height: 519px;  
 }    
-#side {
+.side {
     padding: 0 16px;
     margin-bottom: 54px;
 }
@@ -240,7 +257,7 @@ h3 {
     margin: 0;
     line-height: 42px;
 }
-#side h3 {
+#us {
     margin-top: 27px;
     margin-bottom: 8px;
 }
@@ -250,16 +267,16 @@ h3 {
     margin-bottom: 14px;
 }
 
-#gallery {
+.gallery {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 48px;
     justify-content: center;
 }
 
-#gallery img {
+.gallery img {
     width: 320px;
-    height: auto;
+    height: 243px;
     line-height: 0;
 }
 
@@ -269,18 +286,18 @@ h3 {
     margin-bottom: 37px;
 }
 
-#themesContainer img {
+.themesContainer img {
     height: 104px;
     width: 104px;
 }
 
-#themesContainer {
+.themesContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-#themesContainer div {
+.themesContainer div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -290,7 +307,7 @@ h3 {
     margin-bottom: 49px;
 }
 
-#themesContainer span {   
+.themesContainer span {   
     width: 288px;
     font-size: 24px;
     color: #060A24;
@@ -298,15 +315,21 @@ h3 {
     font-weight: 600;
 }  
 
-#background2 {
+.background2 {
+    position: relative;
     height: 341px;
     width: 100%;
     background-image: linear-gradient(225deg, #0000FF , #0000A3);
-    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
-    -webkit-clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.background2 .polygonTop {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10vw;
 }
 
 .question {
@@ -447,10 +470,9 @@ footer i {
     }
 
     .background {
+        position: relative;
         height: auto;
-        clip-path: polygon(0 12%, 100% 0%, 100% 88%, 0% 100%);
-        -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 85%, 0% 100%);
-        padding: 186px 100px 0px;
+        padding-top: 186px;
     }
 
     #episodes {
@@ -462,6 +484,7 @@ footer i {
     
     .pluginContainer {
         margin-bottom: 232.6px;
+        margin: 0 100px;
         height: auto;
         width: 100%;
         flex-wrap: wrap;
@@ -470,16 +493,19 @@ footer i {
 
     .plugin {
         justify-content: space-between;
+        margin-bottom: 160.6px;
     }
 
     iframe {
         width: 584px;
         height: 232px;
         margin-bottom: 72px;
+        margin-top: 0;
 
     }
 
-    #phoneContainer {
+    .phoneContainer {
+        flex-wrap: wrap;
         flex-direction: row;
         padding-left: 200px;
         max-width: 1184px;
@@ -488,24 +514,25 @@ footer i {
         margin-bottom: 64px;
     }
 
-    #phone {
+    .phone {
         width: 457.6px;
         height: 660px;
         margin: 0;
     }
 
-    #phoneContainer img {
+    .phoneContainer img {
+        margin-left: 0;
         width: 457.6px;
         height: 660px;
     }
 
-    #phoneContainer p {
+    .phoneContainer p {
         width: 464px;
         height: auto;
         line-height: 24px;
     }
 
-    #side {
+    .side {
         padding: 0;
         margin: 0;
     }
@@ -515,7 +542,7 @@ footer i {
         line-height: 62px;
     }
 
-    #side h3 {
+    #us {
         margin: 0 0 24px;
     }
 
@@ -524,13 +551,13 @@ footer i {
         margin-bottom: 36px;
     }
 
-    #gallery img {
+    .gallery img {
         width: 480px;
-        height: auto;
+        height: 364px;
         line-height: 0;
     }
 
-    #gallery {
+    .gallery {
         margin-bottom: 64px;
     }
 
@@ -538,28 +565,26 @@ footer i {
         margin: 0 0 69px 200px;
     }
 
-    #themesContainer {
+    .themesContainer {
         padding: 0 200px;
         margin-bottom: 34px;
     }
 
-    #themesContainer div {
+    .themesContainer div {
         width: 260px;
         margin-bottom: 0;
         height: 210px;
         justify-content: start;
     }
 
-    #themesContainer span {   
+    .themesContainer span {   
         width: 220px;
         margin-top: 29px;
     }    
 
-    #background2{
+    .background2{
         height: 518px;
         width: 100%;
-        clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
-        -webkit-clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0% 100%);
     }
     
     .question {
@@ -567,7 +592,7 @@ footer i {
         margin-top: 213px;
     }
 
-    #background2 button {
+    .background2 button {
         width: 345px;
     }
 
