@@ -101,10 +101,10 @@ li a {
 }
 
 .title {
-    margin: 0 16px;  
+    margin: 0 16px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
 }
 
 h1 {
@@ -435,14 +435,13 @@ footer i {
     
     .title {
         padding-top: 200px;
-        width: 740px;
-        margin: 0 200px;
+        margin-left: 200px;
+        margin-right: 200px;
         align-items: flex-start;
     }
 
     .title h1 {
         font-size: 64px;
-        width: 740px;
         padding: 0;
         line-height: 84px;
         margin-bottom: 0;
@@ -459,7 +458,7 @@ footer i {
     }
 
     .title p {
-        width: 628px;
+        max-width: 628px;
         margin-bottom: 56px;
     }
 
@@ -606,15 +605,5 @@ footer i {
         margin-left: 36px;
         margin-right: 0;
     }
-
-
-
-
-
-
-
-
-
-
 
 }
