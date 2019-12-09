@@ -181,14 +181,14 @@ p {
 
 .background .polygonTop {
     position: absolute;
-    top: 0;
+    top: -1px;
     width: 100%;
     height: 10vw;
 }
 
 .background .polygonBottom {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: 100%;
     height: 10vw;
 }
@@ -327,7 +327,7 @@ h3 {
 
 .background2 .polygonTop {
     position: absolute;
-    top: 0;
+    top: -1px;
     width: 100%;
     height: 10vw;
 }
@@ -496,11 +496,19 @@ footer i {
     }
 
     iframe {
-        width: 584px;
+        max-width: 50%;
         height: 232px;
         margin-bottom: 72px;
         margin-top: 0;
 
+    }
+
+    iframe:nth-child(even) {
+        padding-left: 36px;
+    }
+
+    iframe:nth-child(odd) {
+        padding-right: 36px;
     }
 
     .phoneContainer {
