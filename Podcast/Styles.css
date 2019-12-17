@@ -534,7 +534,7 @@ footer i {
     }
 
     .phoneContainer p {
-        width: 464px;
+        max-width: 464px;
         height: auto;
         line-height: 24px;
     }
