@@ -146,7 +146,7 @@ p {
     line-height: 22px;
 }
 
-.more {
+.button {
     font-size: 16px;
     width: 288px;
     height: 48px;
@@ -157,9 +157,12 @@ p {
     font-weight: 600;
     cursor: pointer;
     border: none;
+    text-align: center;
+    margin: auto;
+    line-height: 48px;
 }    
 
-.more:hover{
+.button:hover{
     background-image: linear-gradient(to left, #0000FE , #00F0B8);
     color: white;
 }
@@ -214,9 +217,10 @@ p {
 
 iframe {
     width: 100%;
-    height: auto;
+    height: 232px;
     margin-top: 11px;
     justify-items: center;
+    border: none;
 }
 
 .phoneContainer {
@@ -397,12 +401,12 @@ footer i {
         text-decoration: none;
         color: #060A24;
     }
-    a:hover {
+    li a:hover {
         text-decoration: line-through;
         font-weight: 500;
         color: #00F3BB;
     }
-    a:active {
+    li a:active {
         color: #060A24;
         text-decoration: line-through;
         opacity: 56%;
@@ -448,9 +452,10 @@ footer i {
         margin-bottom: 56px;
     }
 
-    .title .more {
+    .title .button {
         width: 226px;
         height: 56px;
+        line-height: 56px;
         margin-bottom: 5px;
     }
 
@@ -576,8 +581,10 @@ footer i {
         padding: 213px 0 151px;
     }
 
-    .background .questionWrapper button {
+    .background .questionWrapper .button {
         width: 345px;
+        height: 56px;
+        line-height: 56px;
     }
 
     footer {
