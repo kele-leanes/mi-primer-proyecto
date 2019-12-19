@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-    justify-content: center;
 }
 
 header {
@@ -101,10 +100,10 @@ li a {
 }
 
 .title {
-    margin: 0 16px;
+    margin: 0 16px 24px; 
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;    
 }
 
 h1 {
@@ -144,9 +143,10 @@ p {
 
 .title p {
     margin-bottom: 36px;
+    line-height: 22px;
 }
 
-.more {
+.button {
     font-size: 16px;
     width: 288px;
     height: 48px;
@@ -154,29 +154,29 @@ p {
     font-family: 'IBM Plex Mono', monospace;
     text-transform: uppercase;
     color: #060A24;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
     border: none;
-    margin: 0 auto;
+    text-align: center;
+    margin: auto;
+    line-height: 48px;
 }    
 
-.more:hover{
+.button:hover{
     background-image: linear-gradient(to left, #0000FE , #00F0B8);
     color: white;
 }
 
-.title .more {
-    margin-bottom: 24px;
-}
-
 .background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    min-height: 940px;
+    height: auto;
     width: 100%;
     background-image: linear-gradient(225deg, #0000FF , #0000A3);
     display: flex;
     z-index: 0;
-    padding-top: 64px;
 }
 
 .background .polygonTop {
@@ -199,13 +199,13 @@ p {
     font-size: 36px;
     font-weight: 300;
     line-height: 42px;
-    margin: 0 5px 5px;
+    margin: 0 5px 10px;
 }
 
 .pluginContainer {
     display: flex;
     flex-direction: column;
-    padding: 0 11px;
+    padding: 64px 11px 143.5px;
 }
 
 .plugin {
@@ -217,9 +217,10 @@ p {
 
 iframe {
     width: 100%;
-    height: auto;
-    margin-top: 16px;
+    height: 232px;
+    margin-top: 11px;
     justify-items: center;
+    border: none;
 }
 
 .phoneContainer {
@@ -275,8 +276,8 @@ h3 {
 }
 
 .gallery img {
-    width: 320px;
-    height: 243px;
+    width: 100%;
+    height: auto;
     line-height: 0;
 }
 
@@ -315,28 +316,15 @@ h3 {
     font-weight: 600;
 }  
 
-.background2 {
-    position: relative;
-    height: 341px;
+.questionWrapper {
     width: 100%;
-    background-image: linear-gradient(225deg, #0000FF , #0000A3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.background2 .polygonTop {
-    position: absolute;
-    top: -1px;
-    width: 100%;
-    height: 10vw;
+    padding: 64px 16px 67px;
+    text-align: center;
 }
 
 .question {
     color: #ffffff;
-    width: 288px;
     text-align: center;
-    margin-top: 64px;
     margin-bottom: 36px;
 }
 
@@ -357,14 +345,16 @@ footer i {
     margin: 0 15px;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     header {
         position: fixed;
         height: 80px;
         padding: 0 100px;
-        margin-bottom: 120px;
+        margin-bottom: 0;
         z-index: 999;
+        -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+        box-shadow: 0 1px 3px rgba(0,0,0,.3);
     }
 
     .logo img {
@@ -411,12 +401,12 @@ footer i {
         text-decoration: none;
         color: #060A24;
     }
-    a:hover {
+    li a:hover {
         text-decoration: line-through;
         font-weight: 500;
         color: #00F3BB;
     }
-    a:active {
+    li a:active {
         color: #060A24;
         text-decoration: line-through;
         opacity: 56%;
@@ -430,7 +420,7 @@ footer i {
     }
 
     .desktop {
-        display: inline-block;
+        display: block;
     }
     
     .title {
@@ -462,28 +452,26 @@ footer i {
         margin-bottom: 56px;
     }
 
-    .title .more {
+    .title .button {
         width: 226px;
         height: 56px;
+        line-height: 56px;
         margin-bottom: 5px;
     }
 
     .background {
         position: relative;
         height: auto;
-        padding-top: 186px;
     }
 
     #episodes {
-        margin-left: 100px;
-        margin-bottom: 26px;
+        margin: 186px 100px 26px;
         font-size: 48px;
         line-height: 62px;
     }
     
     .pluginContainer {
-        margin-bottom: 232.6px;
-        margin: 0 100px;
+        padding: 0 100px;
         height: auto;
         width: 100%;
         flex-wrap: wrap;
@@ -589,18 +577,14 @@ footer i {
         margin-top: 29px;
     }    
 
-    .background2{
-        height: 518px;
-        width: 100%;
-    }
-    
-    .question {
-        width: 692px;
-        margin-top: 213px;
+    .questionWrapper {
+        padding: 213px 0 151px;
     }
 
-    .background2 button {
+    .background .questionWrapper .button {
         width: 345px;
+        height: 56px;
+        line-height: 56px;
     }
 
     footer {

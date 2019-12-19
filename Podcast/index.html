@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Podcast Channel</title>
     <link rel="stylesheet" href="Styles.css">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/deeca150a5.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,8 +15,8 @@
         <div class="logo"><a href="index.html"><img src="./assets/logo.svg" alt="Logo"></a></div>
         <input type="checkbox" id="menu">
         <label for="menu">
-            <div class="hamburguer">&#9776;</div>
-            <div class="closeIcon">X</div>
+            <span class="hamburguer">&#9776;</span>
+            <span class="closeIcon">X</span>
         </label>
         <div class="options">
             <ul>
@@ -29,7 +30,7 @@
         <h1>Hello <span>world</span> pale blue dot</h1>
         <p class="desktop">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
         <p class="mobile">Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.</p>
-        <a href="#topics"><button class="more">conocé más</button></a>
+        <a href="#topics"><div class="button">conocé más</div></a>
     </div>
     <div class="background">
         <svg class="polygonTop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -41,10 +42,10 @@
         <div class="pluginContainer">
             <div><h3 id="episodes">Episodios</h3></div>
             <div class="plugin">
-                <iframe src="https://open.spotify.com/embed-podcast/episode/6y5nfEyoY9gV9Vuh2RVidx" width="100%" height="232" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/1qPTCw75CUImdyg7n1aekV" width="100%" height="232" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/7mxxAqjCrSlM51EpWzpkCW" width="100%" height="232" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media"></iframe>
-                <iframe src="https://open.spotify.com/embed-podcast/episode/75U8YmnAWoW4MiboUZX7ie" width="100%" height="232" frameborder="0" scrolling="no" allowtransparency="true" allow="encrypted-media"></iframe>    
+                <iframe src="https://open.spotify.com/embed-podcast/episode/6y5nfEyoY9gV9Vuh2RVidx" ></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/1qPTCw75CUImdyg7n1aekV" ></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/7mxxAqjCrSlM51EpWzpkCW" ></iframe>
+                <iframe src="https://open.spotify.com/embed-podcast/episode/75U8YmnAWoW4MiboUZX7ie" ></iframe>    
             </div>
         </div>
     </div>
@@ -61,8 +62,8 @@
             <img src="./assets/grace-hopper.png" alt="Grace Hopper.">
             <img src="./assets/Katie-Bouman.png" alt="Katie Bouman.">
             <img src="./assets/Margaret_Hamilton.png" alt="Margaret Hamilton.">
-            <img src="./assets/An E.R.A.Univac 1103 computer in the 1950s.png" alt="E.R.A univac 1103. Computadora en los años 50.">
-            <img src="./assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Operadores con una Eniac. Primera computadora del mundo programable.">
+            <img src="./assets/Univac.png" alt="E.R.A univac 1103. Computadora en los años 50.">
+            <img src="./assets/Eniac.png" alt="Operadores con una Eniac. Primera computadora del mundo programable.">
             <img src="./assets/susan-kare.png" alt="Susan Kare.">
         </div>
     </div>
@@ -75,12 +76,14 @@
             <div class="themesIcon"><img src="./assets/icon4.svg" alt=""><span class="subtitle">Seguridad informática</span></div>
         </div>
     </div>
-    <div class="background2">
+    <div class="background">
         <svg class="polygonTop" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
             <polygon fill="white" points="0 100,0 0,100 0,100 5"/>
         </svg>
-        <div><h3 class="question">¿Querés las últimas novedades?</h3></div>
-        <a href="#episodes"><button class="more">escuchá los episodios</button></a>
+        <div class="questionWrapper">
+            <h3 class="question">¿Querés las últimas novedades?</h3>
+            <a href="#episodes"><div class="button">escuchá los episodios</div></a>
+        </div>    
     </div>
     <footer>
         <div>©2019- Hello blue pale dot</div>
